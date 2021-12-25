@@ -1,0 +1,12 @@
+.heading{
+    @apply mt-4 text-xl text-blue-500 font-bold
+}
+.inputArea{
+    @apply text-center
+}
+.inputField{
+    @apply border-2 mt-8 rounded-md
+}
+.postBtn{
+    @apply border-2 p-3 rounded-md text-white bg-blue-500
+}
