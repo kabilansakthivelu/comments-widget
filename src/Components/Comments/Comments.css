@@ -8,5 +8,14 @@
     @apply flex flex-row items-center justify-between
 }
 .deleteIcon{
-    @apply text-red-500
+    @apply text-red-500 cursor-pointer
+}
+.placeholderText{
+    @apply font-semibold text-center
+}
+.commentOptions{
+    @apply flex space-x-2
+}
+.editIcon{
+    @apply text-green-500 cursor-pointer
 }

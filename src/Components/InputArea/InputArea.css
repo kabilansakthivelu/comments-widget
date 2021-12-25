@@ -5,7 +5,7 @@
     @apply text-center
 }
 .inputField{
-    @apply border-2 mt-8 rounded-md
+    @apply border-2 mt-8 rounded-md p-4
 }
 .postBtn{
     @apply border-2 p-3 rounded-md text-white bg-blue-500

@@ -1,7 +1,25 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './InputArea.css';
 
-const InputArea = ({commentRef, postComment}) => { 
+const InputArea = ({dispatch}) => { 
+
+    const commentRef = useRef();
+
+  const postComment = (e) =>{
+        e.preventDefault();
+        let comment = commentRef.current.value;
+        let id = new Date().getTime().toString();
+        if(comment !== ""){
+        dispatch({
+            type: "ADDED_COMMENT",
+            payload: {
+                id,
+                comment,
+            }
+        })
+        commentRef.current.value = "";
+        }
+    }
 
     return (
         <div className="inputArea">
