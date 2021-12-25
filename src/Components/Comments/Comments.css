@@ -1,0 +1,12 @@
+.commentsSection{
+    @apply w-6/12 mx-auto mt-10
+}
+.individualComment{
+    @apply border-2 border-gray-300 rounded-md my-1 px-2 py-4
+}
+.commentDetails{
+    @apply flex flex-row items-center justify-between
+}
+.deleteIcon{
+    @apply text-red-500
+}

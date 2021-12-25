@@ -1,15 +1,7 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import './InputArea.css';
 
-const InputArea = () => {
-
-    const commentRef = useRef();
-
-    const postComment = (e) =>{
-        e.preventDefault();
-        
-        commentRef.current.value = "";
-    }
+const InputArea = ({commentRef, postComment}) => { 
 
     return (
         <div className="inputArea">
